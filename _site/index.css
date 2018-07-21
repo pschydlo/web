@@ -1,0 +1,56 @@
+body {
+    padding-top: 60px;
+    padding-left: 20%;
+    padding-right:30%;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8em;
+  }
+
+  @media (max-width: 980px) {
+    body {
+      padding-top: 0;
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+  }
+
+  .vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+h1, h2 { 
+    margin-top:0;
+    font-family: 'Arial', sans-serif;
+}
+ 
+ul { 
+    padding-left: 1em;
+    list-style-type: square
+}
+
+
+.row {
+    display: flex; /* equal height of the children */
+    flex-wrap: wrap;
+}
+
+.profile {
+    padding-right: 1em;
+}
+
+.about {
+    width: 40%;
+}
+
+img{
+    margin: 0.5em;
+}
+
+.papertitle{
+    font-style: italic
+}
+
+.place{
+    font-style: italic
+}
