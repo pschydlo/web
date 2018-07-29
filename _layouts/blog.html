@@ -1,0 +1,40 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/index.css">
+
+<title>Paul Schydlo: About Robots</title>
+
+</head>
+<body>
+
+<nav>
+  <h1><b>About Robots</b></h1>
+
+<p>Thoughts about robots, machine learning, optimization and control theory. Subscribe <a href="/feed.xml">via RSS</a>
+</nav>
+
+<div class="wrapper">
+  
+  <ul class="post-list">
+        {% for post in site.posts limit:10 %}
+          <li class="post-entry">
+            
+            <h2>
+              <a class="post-link" href="{{ post.url }}">
+                {{ post.title }}
+              </a>
+            </h2>
+            <span class="post-meta"><time class="dt-published" datetime="{{post.date}}" itemprop="datePublished">Jul 27, 2018</time></span>
+            <p>{{ post.excerpt }} <a href="{{ post.url }}">(...)</a></p>
+          </li>
+        {% endfor %}
+      </ul>
+
+  
+
+</div>
+</body>
+
+</html>

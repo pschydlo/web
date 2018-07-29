@@ -1,7 +1,7 @@
 body {
     padding-top: 60px;
     padding-left: 20%;
-    padding-right:30%;
+    padding-right:20%;
     font-family: 'Arial', sans-serif;
     font-size: 1.8em;
   }
@@ -40,11 +40,17 @@ ul {
 }
 
 .about {
-    width: 40%;
+    width:60%;
+}
+@media (max-width: 600px) {
+    .about {
+        width:100%;
+    }
 }
 
+
 img{
-    margin: 0.5em;
+    margin: em;
 }
 
 .papertitle{
@@ -53,4 +59,30 @@ img{
 
 .place{
     font-style: italic
+}
+
+.post-meta {
+    color: grey
+}
+
+.post-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2em;
+}
+
+.post-entry{
+    padding-bottom: 0.6em;
+}
+
+nav{
+    padding-bottom: 2em;
+}
+
+.right-align{
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
 }
