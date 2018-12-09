@@ -21,13 +21,13 @@
         {% for post in site.posts limit:10 %}
           <li class="post-entry">
             
-            <h2>
+            <h3>
               <a class="post-link" href="{{ post.url }}">
-                {{ post.title }}
+                <b>{{ post.title }}</b>
               </a>
-            </h2>
+            </h3>
             <span class="post-meta"><time class="dt-published" datetime="{{post.date}}" itemprop="datePublished">Jul 27, 2018</time></span>
-            <p>{{ post.excerpt }} <a href="{{ post.url }}">(...)</a></p>
+            <p>{{ post.excerpt | strip_html}} <a href="{{ post.url }}">(...)</a></p>
           </li>
         {% endfor %}
       </ul>

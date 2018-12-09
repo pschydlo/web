@@ -15,8 +15,8 @@
 <meta name="generator" content="Jekyll v3.8.3" />
 <meta property="og:title" content="About Robots" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="{{page.excerpt}}" />
-<meta property="og:description" content="{{page.excerpt}}" />
+<meta name="description" content="{{page.excerpt | strip_html}}" />
+<meta property="og:description" content="{{page.excerpt | strip_html}}" />
 <link rel="canonical" href="https://paulschydlo.com/{{page.url}}" />
 <meta property="og:url" content="https://paulschydlo.com/{{page.url}}" />
 <meta property="og:site_name" content="Paul Schydlo" />
@@ -30,14 +30,12 @@
 <link rel="stylesheet" href="/index.css">
 
 <body><main class="page-content" aria-label="Content">
-      <div class="wrapper">
-          <span class="right-align"><a href="/blog"><b>Blog</b></a></span>
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-
+<div class="wrapper">
+    <span ><a href="/blog"><b>Blog</b></a></span>
+  <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title }}</h1> 
+    <h1 class="post-title p-name serif" itemprop="name headline"><b>{{ page.title }}</b></h1> 
     <p class="post-meta">
       <time class="dt-published" datetime="{{page.date}}" itemprop="datePublished">Jul 27, 2018
       </time></p>
